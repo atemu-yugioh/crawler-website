@@ -1,0 +1,9 @@
+#cloud-config
+runcmd:
+  # Docker
+  - curl -fsSL https://get.docker.com/ | sh
+  - sudo usermod -aG docker ubuntu
+
+packages:
+  - git
+  - curl
